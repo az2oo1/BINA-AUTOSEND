@@ -1,0 +1,13 @@
+services:
+  whatsapp-gateway:
+    build: .
+    container_name: whatsapp-gateway
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      # Mount the local data folder to persist settings & WhatsApp login credentials
+      - ./data:/app/data
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
