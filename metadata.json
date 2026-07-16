@@ -1,0 +1,6 @@
+{
+  "name": "WhatsApp Webhook Gateway",
+  "description": "Secure API webhook router to automate WhatsApp message dispatch using QR-code scanner.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
